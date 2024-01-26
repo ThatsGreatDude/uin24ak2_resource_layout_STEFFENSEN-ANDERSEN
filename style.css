@@ -19,7 +19,7 @@ body {
     margin: 120px auto;
     min-height: 350px;
     background-color: var(--white);
-}
+} /*spurte chat gpt om hvordan jeg tok containeren nedover*/
 
 header {
     display: flex;
