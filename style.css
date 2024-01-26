@@ -12,12 +12,11 @@
 body {
     background-color: var(--lightgrey);
     font-family: var(--font);
-
 }
 
 #container {
-    width: 90%;
-    margin: 0 auto;
+    width: 1050px;
+    margin: 120px auto;
     min-height: 350px;
     background-color: var(--white);
 }
@@ -25,7 +24,8 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    position: relative;
+    position: absolute;
+    top: 300px;
 }
 
 nav {
@@ -43,6 +43,15 @@ nav a {
     color: var(--white);
     text-decoration: none;
     box-sizing:  border-box;
+    height: 70px;
+    width: 170px;
+    margin-right: 20px;
+    background-color: var(---blue); 
+}
+
+nav a.selected {
+    color: var(--blue); 
+    background-color: var(--white); 
 }
 
 nav a:hover {
@@ -50,3 +59,15 @@ nav a:hover {
     color: var(--blue);
 }
 
+#category-info-container {
+    position: relative;
+    top: 0%; 
+    left: 50px;
+    width: 1000px;
+    background-color: #fff; 
+}
+
+#category-info {
+    width: 850px; 
+    padding: 10px; 
+}

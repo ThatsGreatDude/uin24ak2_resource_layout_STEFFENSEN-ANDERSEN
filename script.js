@@ -6,6 +6,12 @@ document.addEventListener("DOMContentLoaded", function() {
             event.preventDefault();
             const category = this.getAttribute("href").substring(1);
             displayCategoryInfo(category);
+            
+            categoryLinks.forEach(link => {
+                link.classList.remove('selected');
+            });
+            
+            this.classList.add('selected');
         });
     });
 
@@ -17,7 +23,6 @@ document.addEventListener("DOMContentLoaded", function() {
             categoryInfoContainer.innerHTML = `
                 <h2>${selectedCategory.category}</h2>
                 <p>${selectedCategory.text}</p>
-                <h3>Sources:</h3>
                 <ul>
                     ${selectedCategory.sources.map(source => `
                         <li><a href="${source.url}" target="_blank">${source.title}</a></li>
