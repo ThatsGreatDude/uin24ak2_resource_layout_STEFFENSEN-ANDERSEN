@@ -16,9 +16,9 @@ body {
 }
 
 #container {
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
-    min-height: 200px;
+    min-height: 350px;
     background-color: var(--white);
 }
 
@@ -49,3 +49,4 @@ nav a:hover {
     background-color: var(--white);
     color: var(--blue);
 }
+
